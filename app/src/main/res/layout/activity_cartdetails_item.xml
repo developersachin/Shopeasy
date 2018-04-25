@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitCenter"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small_5"
+            android:id="@+id/prod_name"
+            android:text=" new Shampoo sdfsd sddfsdf sdfsdf sfdsf"
+            android:maxLines="2"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/cart_delete"
+            android:layout_marginRight="@dimen/padding_small_5"
+            android:layout_marginTop="@dimen/padding_medium_10dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_delete"
+            android:src="@mipmap/ic_highlight_off_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/padding_medium_10dp"
+            android:layout_marginRight="@dimen/padding_medium_10dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/prod_qty"
+            android:textColor="@color/black"
+            android:layout_above="@id/layout_2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/padding_medium_10dp"
+            android:layout_marginBottom="@dimen/padding_small_5"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_2"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/padding_medium_10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/price_old"
+                android:text="5 USD"
+                android:layout_alignParentLeft="true"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/padding_medium_10dp"
+                android:layout_marginRight="@dimen/padding_medium_10dp"
+                android:background="@drawable/strick_line"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/prod_price"
+                android:text="3 USD"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:layout_toRightOf="@id/price_old"
+                android:gravity="right"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:layout_marginLeft="@dimen/padding_medium_10dp"
+                android:textColor="@color/colorAccent"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_shopping_cart_white_24dp"
+                android:scaleType="fitCenter"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/padding_medium_10dp"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/padding_small_5"
+    android:padding="@dimen/padding_small_5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitCenter"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small_5"
+            android:id="@+id/prod_name"
+            android:text=" new Shampoo sdfsd sddfsdf sdfsdf sfdsf"
+            android:maxLines="2"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/cart_delete"
+            android:layout_marginRight="@dimen/padding_small_5"
+            android:layout_marginTop="@dimen/padding_medium_10dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_delete"
+            android:src="@mipmap/ic_highlight_off_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/padding_medium_10dp"
+            android:layout_marginRight="@dimen/padding_medium_10dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prod_name"
+            android:layout_marginTop="@dimen/padding_small_5">
+
+
+            <android.support.v7.widget.AppCompatRatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/prod_rating"
+                android:numStars="5"
+                android:stepSize=".5"
+                android:rating="3"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:isIndicator="true"
+                style="@style/ratingBarSmall"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating_count"
+                android:layout_toRightOf="@id/prod_rating"
+                android:layout_marginLeft="@dimen/padding_medium_10dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_2"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="@dimen/padding_medium_10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/prod_price"
+                android:text="3 USD"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:layout_alignParentLeft="true"
+                android:gravity="right"
+                android:layout_marginTop="@dimen/padding_small_5"
+                android:layout_marginLeft="@dimen/padding_medium_10dp"
+                android:textColor="@color/colorAccent"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_shopping_cart_white_24dp"
+                android:scaleType="fitCenter"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/padding_medium_10dp"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
